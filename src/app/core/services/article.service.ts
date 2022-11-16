@@ -25,6 +25,9 @@ export class ArticleService {
   }
 
 
+  getArticlesByCategory(id:string){
+    return this.db.collection('article',(ref) => ref.where("id_category", "==", id)).snapshotChanges();
+  }
 
   getArticles() {
 

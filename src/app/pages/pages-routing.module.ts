@@ -1,3 +1,4 @@
+import { CategoriesComponent } from './categories/categories.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path:'article/:id',
     component: ArticleDetailComponent
+  },
+  {
+    path: 'categorie/:id',
+    component: CategoriesComponent
   },
   {
     path: 'login',

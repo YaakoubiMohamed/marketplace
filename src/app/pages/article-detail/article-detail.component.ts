@@ -40,11 +40,12 @@ export class ArticleDetailComponent implements OnInit {
   }
 
   addtoCart(){
+
     let cart:any={};
     cart.article= this.article;
     cart.quantite= 1;
     cart.total= cart.quantite * cart.article.prix;
-    cart.client = this.user;
+    // cart.client = this.user;
     cart.etat = 'en attente';
     cart.date = new Date();
     this.carts.push(cart);

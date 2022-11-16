@@ -27,7 +27,7 @@ export class CategorieService {
 
   getCategories() {
 
-    return this.userRef;
+    return this.db.collection('/categorie').snapshotChanges();
 
   }
 
