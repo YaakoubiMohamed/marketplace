@@ -9,6 +9,9 @@ import { CategorieService } from '../../core/services/categorie.service';
 export class NavbarComponent implements OnInit {
   categories: any[]=[];
 
+  searchText: string='';
+  category:string='';
+
   constructor(private service: CategorieService) { }
 
   ngOnInit(): void {
@@ -31,5 +34,7 @@ export class NavbarComponent implements OnInit {
 
     })
   }
+
+  search(){}
 
 }

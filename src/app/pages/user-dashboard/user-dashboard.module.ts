@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { OrderInfoComponent } from './order-info/order-info.component';
 import { FavorisComponent } from './favoris/favoris.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { FavorisComponent } from './favoris/favoris.component';
   ],
   imports: [
     CommonModule,
-    UserDashboardRoutingModule
+    UserDashboardRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class UserDashboardModule { }

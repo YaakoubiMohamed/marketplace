@@ -39,6 +39,12 @@ export class UtilisateurService {
 
   }
 
+  updateUser(user:any) {
+
+    return this.db.collection('/users').doc(user.id).update(user);
+
+  }
+
 
 
   acceptUser(id: string, users: any) {
